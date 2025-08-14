@@ -1,0 +1,20 @@
+{
+  "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe" : 
+  {
+    "hash" : "545372c8dfdf9588e8ce7f57b6b1e15c8a1df04b",
+    "size" : 677496,
+    "timestamp" : 1755027788
+  },
+  "C:/Program Files/mingw64/bin/x86_64-w64-mingw32-g++.exe" : 
+  {
+    "hash" : "171e015cbc78b630f8fad260ceb6b28b2639d6aa",
+    "size" : 1933838,
+    "timestamp" : 1728123460
+  },
+  "C:/Program Files/mingw64/bin/x86_64-w64-mingw32-gcc.exe" : 
+  {
+    "hash" : "a5ff1493fb94438c5eed7243896ae323769d7f5b",
+    "size" : 1931278,
+    "timestamp" : 1728123460
+  }
+}

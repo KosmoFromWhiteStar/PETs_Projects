@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/cmake_install.cmake",
+		"C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/LIBR/json/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
