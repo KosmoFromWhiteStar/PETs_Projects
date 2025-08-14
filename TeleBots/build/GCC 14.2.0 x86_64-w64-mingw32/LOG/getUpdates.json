@@ -1,3 +1,0 @@
-{"ok":true,"result":[{"update_id":655275978,
-"message":{"message_id":2,"from":{"id":1282744798,"is_bot":false,"first_name":"Kosmo","username":"the_kosmo","language_code":"en"},"chat":{"id":1282744798,"first_name":"Kosmo","username":"the_kosmo","type":"private"},"date":1755041945,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}},{"update_id":655275979,
-"message":{"message_id":3,"from":{"id":1282744798,"is_bot":false,"first_name":"Kosmo","username":"the_kosmo","language_code":"en"},"chat":{"id":1282744798,"first_name":"Kosmo","username":"the_kosmo","type":"private"},"date":1755041946,"text":"Hi"}}]}

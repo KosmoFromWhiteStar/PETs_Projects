@@ -1,7 +1,0 @@
-prefix=C:/Users/The_K/Desktop/TeleBots/build/install/GCC 14.2.0 x86_64-w64-mingw32
-includedir=${prefix}/include
-
-Name: nlohmann_json
-Description: JSON for Modern C++
-Version: 3.12.0
-Cflags: -I${includedir}

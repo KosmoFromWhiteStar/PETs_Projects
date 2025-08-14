@@ -1,5 +1,0 @@
-C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/CMakeFiles/TeleBot.dir
-C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/CMakeFiles/edit_cache.dir
-C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/CMakeFiles/rebuild_cache.dir
-C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/LIBR/json/CMakeFiles/edit_cache.dir
-C:/Users/The_K/Desktop/TeleBots/build/GCC 14.2.0 x86_64-w64-mingw32/LIBR/json/CMakeFiles/rebuild_cache.dir
