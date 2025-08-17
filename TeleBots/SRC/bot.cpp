@@ -5,9 +5,8 @@ Bot::Bot(std::string path){
     std::ifstream file("./CONF/bot_api_token.txt");
     if(!file.is_open()){
         std::cout << "Bot api token isnt find\n";
-        exit(1);
+        return;
     }
-
 }
 void Bot::get_Update(){
     std::string url = this->url_token + "getUpdates";

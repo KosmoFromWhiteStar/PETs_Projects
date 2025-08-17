@@ -3,3 +3,4 @@
 ./LIBR/
 build/
 bot_api_token.txt
+vcpkg_installed/

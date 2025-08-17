@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 3.39)
+SET(VCPKG_MANIFEST_INSTALL ON)
+SET(VCPKG_MANIFEST_DIR "${CMAKE_SOURCE_DIR}/vcpkg.json")
+
 project(TELEBOT VERSION 0.0.1 LANGUAGES C CXX)
-set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
-list(APPEND CMAKE_PREFIX_PATH "$ENV{VCPKG_ROOT}/installed/x64-windows/share")
-message("VPKG $ENV{VCPKG_ROOT}")
+set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}\\scripts\\buildsystems\\vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+SET(VCPKG_TARGET_TRIPLET x64-mingw-static)
+list(APPEND CMAKE_PREFIX_PATH "C:/Library/vcpkg/installed/${VCPKG_TARGET_TRIPLET}")
+
+message("VPKG ${CMAKE_TOOLCHAIN_FILE}")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
