@@ -2,3 +2,4 @@
 ./.vsconfig
 ./LIBR/
 build/
+bot_api_token.txt
