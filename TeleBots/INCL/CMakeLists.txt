@@ -1,0 +1,1 @@
+SET(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/INCL/bot.hpp" "${CMAKE_SOURCE_DIR}/INCL/Headers.hpp")
