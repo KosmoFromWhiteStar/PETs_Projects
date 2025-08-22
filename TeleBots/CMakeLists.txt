@@ -11,23 +11,19 @@ SET(VCPKG_TARGET_TRIPLET x64-mingw-static)
 list(APPEND CMAKE_PREFIX_PATH "C:/Library/vcpkg/installed/${VCPKG_TARGET_TRIPLET}")
 
 
-find_package(cpr REQUIRED)
-find_package(CURL REQUIRED)
+find_package(cpr CONFIG REQUIRED)
+find_package(CURL CONFIG REQUIRED)
 
 
 file(COPY CONF DESTINATION .)
 file(COPY LOG DESTINATION .)
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/INCL)
+include_directories(${CMAKE_SOURCE_DIR}/INCL)
 add_subdirectory(${CMAKE_SOURCE_DIR}/LIBR)
 
-add_executable(TeleBot main.cpp ${INCLUDE_DIR} ${SRC_DIR})
-
+add_executable(TeleBot main.cpp)
 target_link_libraries(TeleBot PUBLIC
     bot
-    nlohmann_json::nlohmann_json
-    cpr::cpr
-    CURL::libcurl
-    ${CMAKE_THREAD_LIBS_INIT}  # Для pthread
 )
-target_include_directories( TeleBot BEFORE PUBLIC ${INCLUDE_DIR})
+

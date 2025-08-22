@@ -20,7 +20,7 @@ Bot::Bot(std::string path){
 }
 
 void Bot::get_Update(){
-    std::string url = this->url_token + "getUpdates";
+    std::string url = this->url_token + "/getUpdates";
     cpr::Response r = cpr::Get(
         cpr::Url{url});
     save(r.text, "getUpdates");
@@ -31,9 +31,17 @@ void Bot::save(const std::string& responce, const std::string& method){
     file << responce;
     file.close();
 }
-void Bot::send_msg(const std::string msg){
-    std::string url = this->url_token + "sendMessagesendMessage";
-    cpr::Response r = cpr::Post(
-        cpr::Url{url}, cpr::File("./LOG/msg.json"));
 
+void Bot::send_msg(const std::string msg){
+    std::string url = this->url_token + "/sendMessage";
+    cpr::Response r = cpr::Post(
+        cpr::Url{url}, cpr::Payload{{"chat_id", "1282744798"}, {"text", msg}});
+    save(r.text, "msg_report");
+}
+
+
+void Bot::sendDice(){
+    std::string url = this->url_token + "/sendDice";
+    cpr::Response r = cpr::Post(cpr::Url{url}, cpr::Payload{{"chat_id", "1282744798"}, {"emoji", "🎰"}});
+    save(r.text, "sendDice");
 }

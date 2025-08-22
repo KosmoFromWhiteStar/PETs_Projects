@@ -4,6 +4,9 @@ using namespace nlohmann;
 int main()
 {  
     Bot tg;
-    tg.get_Update();
+    greetings();
+    //tg.get_Update();
+    //tg.send_msg("dsadsadadasda");
+    //output_msg();
     return 0;
 }

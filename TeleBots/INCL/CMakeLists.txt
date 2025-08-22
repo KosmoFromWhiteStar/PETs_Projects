@@ -1,7 +1,16 @@
 cmake_minimum_required(VERSION 3.39)
-SET(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/INCL/bot.hpp" "${CMAKE_SOURCE_DIR}/INCL/Headers.hpp")
-SET(SRC_DIR "${CMAKE_SOURCE_DIR}/SRC/bot.cpp")
+SET(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/INCL/bot.hpp" "${CMAKE_SOURCE_DIR}/INCL/Headers.hpp" 
+    "greeter.h" "log.h")
+SET(SRC_DIR "${CMAKE_SOURCE_DIR}/SRC/bot.cpp" "${CMAKE_SOURCE_DIR}/SRC/log.cpp")
 
-add_library(bot ${CMAKE_SOURCE_DIR}/SRC/bot.cpp "bot.hpp")
-target_include_directories(bot BEFORE PUBLIC "${CMAKE_SOURCE_DIR}/SRC"
+include_directories(BEFORE PUBLIC "${CMAKE_SOURCE_DIR}/SRC"
     ${CPR_INCLUDE_DIRS})
+
+add_library(bot ${INCLUDE_DIR} ${SRC_DIR})
+
+target_link_libraries(bot PUBLIC
+    nlohmann_json::nlohmann_json
+    cpr::cpr
+    CURL::libcurl
+    ${CMAKE_THREAD_LIBS_INIT}  # Для pthread
+)

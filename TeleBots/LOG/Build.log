@@ -1,16 +1,17 @@
 [main] Building folder: c:/Users/The_K/Desktop/PET_projects/TeleBots/build 
 [build] Starting build
 [proc] Executing command: "C:\Program Files\CMake\bin\cmake.EXE" --build c:/Users/The_K/Desktop/PET_projects/TeleBots/build --config Debug --target all -j 16 --
-[build] [ 25%] Building CXX object INCL/CMakeFiles/bot.dir/__/SRC/bot.cpp.obj
-[build] In file included from C:/Users/The_K/Desktop/PET_projects/TeleBots/INCL/bot.hpp:3,
-[build]                  from C:\Users\The_K\Desktop\PET_projects\TeleBots\SRC\bot.cpp:1:
-[build] C:/Users/The_K/Desktop/PET_projects/TeleBots/INCL/Headers.hpp:4:10: fatal error: cpr/cpr.h: No such file or directory
-[build]     4 | #include <cpr/cpr.h>
-[build]       |          ^~~~~~~~~~~
-[build] compilation terminated.
-[build] mingw32-make[2]: *** [INCL\CMakeFiles\bot.dir\build.make:79: INCL/CMakeFiles/bot.dir/__/SRC/bot.cpp.obj] Error 1
-[build] mingw32-make[1]: *** [CMakeFiles\Makefile2:205: INCL/CMakeFiles/bot.dir/all] Error 2
+[build] [ 20%] Building CXX object INCL/CMakeFiles/bot.dir/__/SRC/log.cpp.obj
+[build] C:\Users\The_K\Desktop\PET_projects\TeleBots\SRC\log.cpp:3:6: error: default argument given for parameter 1 of 'void output_msg(std::string)' [-fpermissive]
+[build]     3 | void output_msg(std::string path = "./LOG"){
+[build]       |      ^~~~~~~~~~
+[build] In file included from C:\Users\The_K\Desktop\PET_projects\TeleBots\SRC\log.cpp:1:
+[build] C:/Users/The_K/Desktop/PET_projects/TeleBots/INCL/log.h:4:6: note: previous specification in 'void output_msg(std::string)' here
+[build]     4 | void output_msg(std::string path = "./LOG");
+[build]       |      ^~~~~~~~~~
+[build] mingw32-make[2]: *** [INCL\CMakeFiles\bot.dir\build.make:94: INCL/CMakeFiles/bot.dir/__/SRC/log.cpp.obj] Error 1
+[build] mingw32-make[1]: *** [CMakeFiles\Makefile2:182: INCL/CMakeFiles/bot.dir/all] Error 2
 [build] mingw32-make: *** [Makefile:90: all] Error 2
 [proc] The command: "C:\Program Files\CMake\bin\cmake.EXE" --build c:/Users/The_K/Desktop/PET_projects/TeleBots/build --config Debug --target all -j 16 -- exited with code: 2
-[driver] Build completed: 00:00:00.931
+[driver] Build completed: 00:00:09.410
 [build] Build finished with exit code 2

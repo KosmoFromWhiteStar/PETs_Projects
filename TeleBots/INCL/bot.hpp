@@ -14,4 +14,5 @@ public:
     void save(const std::string& responce, const std::string& method);
     void get_Responce();
     void send_msg(const std::string msg);
+    void sendDice();
 };
