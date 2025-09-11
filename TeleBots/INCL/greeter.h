@@ -12,10 +12,9 @@ inline int greetings(){
     {
         std::cout << com[i];
     }
+    std::cout << std::endl;
     return 1;
 }
-
-
 
 
 #endif

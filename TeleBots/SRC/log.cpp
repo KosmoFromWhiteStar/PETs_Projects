@@ -8,11 +8,12 @@ void output(const std::string& file_path){
     std::cout << js.dump(4) << std::endl;
     std::cout << "---------------\tEND OF [" << file_path << "] \t---------------\n";
 }
+
 void output_msg(const std::string& path){
         for (const auto & entry : std::filesystem::directory_iterator(path)){
             if( entry.path().extension() == ".json"){
                 output(entry.path().string());
-                std::filesystem::remove(entry.path());
+                //std::filesystem::remove(entry.path());
             }
         }
 }
