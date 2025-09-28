@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    system("cd test_dir");
-    system("g++ ./test_dir/main.cpp");
-    auto re = WinExec("a.exe", 2);
-    std::cout << re << std::endl;
+    system("cd");
+    system("cmake -S .\\test_dir -B .\\test_dir\\build");
+    system("cmake --build .\\test_dir\\build");
+    system(".\\test_dir\\build\\vuild.exe");
     return 0;
 }

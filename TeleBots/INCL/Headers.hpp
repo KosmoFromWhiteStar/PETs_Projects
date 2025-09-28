@@ -7,8 +7,10 @@
 #include <functional>
 #include <map>
 
+#include "people.hpp"
 #include "bot.hpp"
 #include "greeter.h"
 #include "log.h"
+
 
 using js = nlohmann::json;

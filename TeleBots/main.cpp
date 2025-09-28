@@ -4,11 +4,8 @@ using namespace nlohmann;
 int main()
 {  
     Bot tg;
-    std::cout << "Input COma >:";
-    std::string coma;
-    std::cin >> coma;
-    tg.ty_meth(coma);
-    std::string fp = ".\\LOG\\"+coma+".json";
-    output(fp);
+    tg.parser_comands();
+    tg.save_People();
+    tg.read_People();
     return 0;
 }
